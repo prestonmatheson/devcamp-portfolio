@@ -1,4 +1,4 @@
- #Dwevcamp Portfolio Application
+ #Devcamp Portfolio Application
 
  >This is a Ruby on Tails 5 application that allows users to create their own portforlios
 
@@ -17,5 +17,5 @@
    end
 ```
 ```javascript
-alert'Hi there'
+alert('Hi there');
 ```
