@@ -50,6 +50,8 @@ class BlogsController < ApplicationController
   # DELETE /blogs/1
   # DELETE /blogs/1.json
   def destroy
+    @portfolio_item = Portfolio.find(params[:id])
+    respond_to do |format|
     @blog.destroy
     respond_to do |format|
       format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
