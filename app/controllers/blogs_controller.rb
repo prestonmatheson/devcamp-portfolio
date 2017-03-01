@@ -5,15 +5,11 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
- 
-    @page_title = "My Portfolio Blog"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @page_title = @blog.title
-    @seo_keywords = @blog.body
   end
 
   # GET /blogs/new
@@ -44,7 +40,7 @@ class BlogsController < ApplicationController
   def update
     respond_to do |format|
       if @blog.update(blog_params)
-        format.html { redirect_to portfolios_path, notice: 'The record was successfully updated.' }
+        format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
       else
         format.html { render :edit }
       end
@@ -56,7 +52,8 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
+      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
+      format.json { head :no_content }
     end
   end
 
@@ -66,8 +63,10 @@ class BlogsController < ApplicationController
     elsif @blog.published?
       @blog.draft!
     end
-    redirect_to blogs_url, notice: 'Blog status has been updated.'
+        
+    redirect_to blogs_url, notice: 'Post status has been updated.'
   end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
