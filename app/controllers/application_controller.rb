@@ -5,4 +5,9 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   include DefaultPageContent
 
+  before_action :set_copyright
+
+  def set_copyright
+    @copyright = MathesonViewTool::Renderer.copyright 'Preston Matheson', 'All rights reserved'
+  end
 end

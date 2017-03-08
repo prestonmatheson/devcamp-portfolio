@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/prestonmatheson/matheson_view_tool
+  revision: 3684e0a06fc31fb0d1901cab4ece5733a062a552
+  specs:
+    matheson_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -181,6 +187,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  matheson_view_tool!
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.1)
