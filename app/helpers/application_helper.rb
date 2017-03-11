@@ -17,6 +17,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    MathesonViewTool::Renderer.copyright 'Preston Matheson', 'All rights reserved'
+    MathesonViewTool::Renderer.copyright 'Preston Matheson', 'All Rights Reserved'
   end
 end
