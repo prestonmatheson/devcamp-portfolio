@@ -13,4 +13,4 @@ CarrierWave.configure do |config|
     secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
     region:            ENV['AWS_REGION'] # Required
   }
-end
+end 
