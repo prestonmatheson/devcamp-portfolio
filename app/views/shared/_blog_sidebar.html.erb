@@ -1,6 +1,14 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
+
+  <div class="sidebar-module topics">
+    <h3>Topics</h3>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
   <div class="sidebar-module sidebar-module-inset">
-    <h4>About</h4>
+    <h4>About the Author</h4>
     <p>I'm 19 years old, single as a pringle, and loving this adventure called <em>life</em>. Feel free to visit me on my social media platforms!</p>
   </div>
 
