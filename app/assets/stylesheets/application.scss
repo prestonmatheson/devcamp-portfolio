@@ -47,6 +47,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
    font-family: 'Josefin Sans', sans-serif;
+   font-weight: bold;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -105,6 +106,13 @@ h6, .h6 {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.custom-color {
+    background-image:
+    linear-gradient(
+      black, transparent
+    );
 }
 
 @media (min-width: 48em) {
@@ -217,7 +225,7 @@ h6, .h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('background_for_portfolio.jpg') no-repeat;
+  background: image-url('background_for_portfolio_soft.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -246,6 +254,7 @@ h6, .h6 {
 
 .app-card-container > .card {
   padding: 40px;
+  margin: 110px 0px;
 }
 
 .app-card-container a {

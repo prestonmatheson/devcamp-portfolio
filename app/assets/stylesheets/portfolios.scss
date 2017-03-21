@@ -14,10 +14,16 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
    font-family: 'Josefin Sans', sans-serif;
+   font-weight: bold;
 }
 
 .navbar {
   margin-bottom: 0;
+}
+
+.navbar-nav.active:after {
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 .jumbotron {
